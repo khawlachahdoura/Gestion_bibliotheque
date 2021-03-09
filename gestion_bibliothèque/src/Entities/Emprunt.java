@@ -6,12 +6,16 @@ public class Emprunt {
 
 	
 	public int nbr_livre_disponible;
+ 
+
+  
 	private int idEmprunt;
 	private int idExemplaire;
 	private int  idEtudiant;
 	private Date date_E;
 	private Date date_RE;
 	public Emprunt(int idExemplaire, int idEtudiant, Date date_E, Date date_RE) {
+ 
 		super();
 		this.idExemplaire = idExemplaire;
 		this.idEtudiant = idEtudiant;

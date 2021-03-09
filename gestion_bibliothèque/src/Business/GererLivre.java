@@ -1,5 +1,5 @@
 package Business;
 
-public class GérerLivre {
+public class GererLivre {
 
 }

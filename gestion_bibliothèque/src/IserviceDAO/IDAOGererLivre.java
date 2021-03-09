@@ -2,7 +2,7 @@ package IserviceDAO;
 
 import Entities.*;
 
-public interface IDAOGérerLivre {
+public interface IDAOGererLivre {
 	boolean ajouter(Livre livre);
 	boolean updateISBN(int isbn, int aISBN);
 	boolean updateTitre(String titre, int aISBN);
