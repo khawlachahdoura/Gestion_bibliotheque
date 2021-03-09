@@ -3,7 +3,7 @@ package IserviceDAO;
 
 import Entities.*;
 
-public interface IDAOGérerNouveauEmp {
+public interface IDAOGererNouveauEmp {
 	boolean ajouter(Emprunt emprunt);
 	boolean modifier(Emprunt emprunt);
 	boolean supprimer(Emprunt emprunt);

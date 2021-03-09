@@ -1,5 +1,5 @@
 package Business;
 
-public class GérerNouveauEmprunt {
+public class GererNouveauEmprunt {
 
 }

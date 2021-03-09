@@ -8,6 +8,9 @@ public class Emprunt {
 	public int nbr_livre_disponible;
 	public Date date_E;
 	public Date date_RE;
+
+
+ 
 	public Emprunt(int codeExemplaire, int nbr_livre_disponible, Date date_E, Date date_RE) {
 		super();
 		this.codeExemplaire = codeExemplaire;
