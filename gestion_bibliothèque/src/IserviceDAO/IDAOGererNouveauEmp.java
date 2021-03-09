@@ -1,10 +1,16 @@
 package IserviceDAO;
 
 
+import java.sql.Date;
+
 import Entities.*;
 
-public interface IDAOGérerNouveauEmp {
-	boolean ajouter(Emprunt emprunt);
-	boolean modifier(Emprunt emprunt);
-	boolean supprimer(Emprunt emprunt);
+public interface IDAOGererNouveauEmp {
+	boolean  modifierDateEmp(int idEmpt, Date nvDateEmp);
+	boolean  modifierDateRet(int idEmpt, Date nvDateRet);
+	boolean  modifieridExemplaire(int idEmpt, int nvIDExemplaire);
+	boolean  modifieridEtudiant(int idEmpt,int nbIDEtudiant);
+	boolean supprimer(int idEmprunt);
+
+
 }
