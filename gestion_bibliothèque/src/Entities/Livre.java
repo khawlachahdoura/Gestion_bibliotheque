@@ -1,15 +1,17 @@
 package Entities;
 
 public class Livre {
-	public int ISBN;
-	public String titre;
-	public String auteur;
+	private int ISBN;
+	private String titre;
+	private String auteur;
+	private String theme;
 	
-	public Livre(int iSBN, String titre, String auteur) {
-		super();
-		ISBN = iSBN;
-		this.titre = titre;
-		this.auteur = auteur;
+
+	public String getTheme() {
+		return theme;
+	}
+	public void setTheme(String theme) {
+		this.theme = theme;
 	}
 	public int getISBN() {
 		return ISBN;
@@ -31,9 +33,14 @@ public class Livre {
 	}
 	@Override
 	public String toString() {
-		return "Livre [ISBN=" + ISBN + ", titre=" + titre + ", auteur=" + auteur + "]";
+		return "Livre [ISBN=" + ISBN + ", titre=" + titre + ", auteur=" + auteur + ", theme=" + theme + "]";
 	}
-	
-	
+	public Livre(int iSBN, String titre, String auteur, String theme) {
+		super();
+		ISBN = iSBN;
+		this.titre = titre;
+		this.auteur = auteur;
+		this.theme = theme;
+	}
 
 }
