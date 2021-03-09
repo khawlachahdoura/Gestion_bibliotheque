@@ -4,31 +4,43 @@ import java.sql.Date;
 
 public class Emprunt {
 
-	public int codeExemplaire;
+	
 	public int nbr_livre_disponible;
-	public Date date_E;
-	public Date date_RE;
-
-
  
-	public Emprunt(int codeExemplaire, int nbr_livre_disponible, Date date_E, Date date_RE) {
+
+  
+	private int idEmprunt;
+	private int idExemplaire;
+	private int  idEtudiant;
+	private Date date_E;
+	private Date date_RE;
+	public Emprunt(int idExemplaire, int idEtudiant, Date date_E, Date date_RE) {
+ 
 		super();
-		this.codeExemplaire = codeExemplaire;
-		this.nbr_livre_disponible = nbr_livre_disponible;
+		this.idExemplaire = idExemplaire;
+		this.idEtudiant = idEtudiant;
 		this.date_E = date_E;
 		this.date_RE = date_RE;
 	}
-	public int getCodeExemplaire() {
-		return codeExemplaire;
+	public int getIdEmprunt() {
+		return idEmprunt;
 	}
-	public void setCodeExemplaire(int codeExemplaire) {
-		this.codeExemplaire = codeExemplaire;
+	public void setIdEmprunt(int idEmprunt) {
+		this.idEmprunt = idEmprunt;
 	}
-	public int getNbr_livre_disponible() {
-		return nbr_livre_disponible;
+	 
+	 
+	public int getIdExemplaire() {
+		return idExemplaire;
 	}
-	public void setNbr_livre_disponible(int nbr_livre_disponible) {
-		this.nbr_livre_disponible = nbr_livre_disponible;
+	public void setIdExemplaire(int idExemplaire) {
+		this.idExemplaire = idExemplaire;
+	}
+	public int getIdEtudiant() {
+		return idEtudiant;
+	}
+	public void setIdEtudiant(int idEtudiant) {
+		this.idEtudiant = idEtudiant;
 	}
 	public Date getDate_E() {
 		return date_E;
@@ -44,9 +56,8 @@ public class Emprunt {
 	}
 	@Override
 	public String toString() {
-		return "Emprunt [codeExemplaire=" + codeExemplaire + ", nbr_livre_disponible=" + nbr_livre_disponible
+		return "Emprunt [idExemplaire=" + idExemplaire + ", idEtudiant=" + idEtudiant
 				+ ", date_E=" + date_E + ", date_RE=" + date_RE + "]";
 	}
-	
 	
 }
