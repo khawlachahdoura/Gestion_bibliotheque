@@ -1,16 +1,20 @@
 package Business;
-import Entities.Emprunt;
 import Entities.Livre;
 import ImplementDAO.ImpDAOGererLivre;
-import ImplementDAO.ImpDAOGererNouveauEmp;
-public class GererLivre {
-	private ImpDAOGererLivre iDaoGererLivre;
+import IserviceDAO.IDAOGererLivre;
 
+public class GererLivre {
+
+	 
+	private IDAOGererLivre iDaoGererLivre;
 	public GererLivre(ImpDAOGererLivre iGererLivre) {
 
 		iDaoGererLivre = iGererLivre;
 
 	}
+	
+	
+	
 
 	public boolean addLivre(Livre livre) {
 

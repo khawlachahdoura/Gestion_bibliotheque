@@ -1,19 +1,22 @@
 package Business;
+import java.sql.Date;
+
 import Entities.Emprunt;
-import Entities.Livre;
-import ImplementDAO.ImpDAOGererLivre;
 import ImplementDAO.ImpDAOGererNouveauEmp;
+import IserviceDAO.IDAOGererNouveauEmp;
+
 public class GererNouveauEmprunt {
 
-	private ImpDAOGererNouveauEmp iDaoGererNouveauEmp;
+	private IDAOGererNouveauEmp iDaoGererNouveauEmp;
 
-	public GererNouveauEmprunt(ImpDAOGererNouveauEmp _iDaoGererNouveauEmp) {
+ 
+	public GererNouveauEmprunt(ImpDAOGererNouveauEmp impDAOGererNouveauEmp) {
 
-		iDaoGererNouveauEmp = _iDaoGererNouveauEmp;
+		iDaoGererNouveauEmp = impDAOGererNouveauEmp;
 
 	}
 
-	private boolean addEmprunt(Emprunt emprunt) {
+	public boolean addEmprunt(Emprunt emprunt) {
 
 		if (iDaoGererNouveauEmp.ajouter(emprunt)) {
 			return true;
@@ -21,19 +24,47 @@ public class GererNouveauEmprunt {
 		return false;
 
 	}
+	 
+	public boolean modifierDateEmp(int idEmpt, Date nvDateEmp) {
 
-	private boolean updateEmprunt(Emprunt emprunt) {
-
-		if (iDaoGererNouveauEmp.modifier(emprunt)) {
+		if (iDaoGererNouveauEmp.modifierDateEmp( idEmpt,  nvDateEmp)) {
 			return true;
 		}
 		return false;
 
 	}
+	
+	public boolean modifierDateRet(int idEmpt, Date nvDateRet) {
 
-	private boolean deleteEmprunt(Emprunt emprunt) {
+		if (iDaoGererNouveauEmp.modifierDateRet( idEmpt,  nvDateRet)) {
+			return true;
+		}
+		return false;
 
-		if (iDaoGererNouveauEmp.supprimer(emprunt)) {
+	}
+	
+	
+	public boolean modifieridExemplaire(int idEmpt, int nvIDExemplaire) {
+		if (iDaoGererNouveauEmp.modifieridExemplaire( idEmpt,  nvIDExemplaire)) {
+			return true;
+		}
+		 
+		return false;
+
+	}
+	
+	public boolean modifieridEtudiant(int idEmpt,int nbIDEtudiant) {
+		if (iDaoGererNouveauEmp.modifieridEtudiant( idEmpt, nbIDEtudiant)) {
+			return true;
+		}
+		 
+		return false;
+
+	}
+
+	public boolean deleteEmprunt(int idEmprunt) {
+
+		if (iDaoGererNouveauEmp.supprimer( idEmprunt)) {
 			return true;
 		}
 		return false;
