@@ -44,6 +44,4 @@ public class Emprunt {
 		return "Emprunt [codeExemplaire=" + codeExemplaire + ", nbr_livre_disponible=" + nbr_livre_disponible
 				+ ", date_E=" + date_E + ", date_RE=" + date_RE + "]";
 	}
-	
-	
 }
