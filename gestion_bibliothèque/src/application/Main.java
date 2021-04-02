@@ -40,7 +40,7 @@ public class Main {
 		if (reponse.equals("y")) {
 			boolean test = gEmprunt.deleteEmprunt(idEmprunt);
 			if (test) {
-				System.out.println("Emprunt supprimer avec sucées");
+				System.out.println("Emprunt supprimer avec sucÃ©es");
 			} else {
 				System.out.println("Il y un probleme lors de sppruimer d'un emprunt:" + idEmprunt);
 			}
@@ -63,7 +63,7 @@ public class Main {
 
 		boolean test = gEmprunt.modifieridEtudiant(idEmpt, nbIDEtudiant);
 		if (test) {
-			System.out.println("Modifier avec sucées");
+			System.out.println("Modifier avec sucÃ©es");
 		} else {
 			System.out.println("Il y un probleme lors de modifier d'un emprunt:" + idEmpt);
 		}
@@ -79,7 +79,7 @@ public class Main {
 
 		boolean test = gEmprunt.modifieridExemplaire(idEmpt, nvIDExemplaire);
 		if (test) {
-			System.out.println("Modifier avec sucées");
+			System.out.println("Modifier avec sucÃ©es");
 		} else {
 			System.out.println("Il y un probleme lors de modifier d'un emprunt:" + idEmpt);
 		}
@@ -96,7 +96,7 @@ public class Main {
 
 		boolean test = gEmprunt.modifierDateRet(idEmpt, nvDateRet);
 		if (test) {
-			System.out.println("Modifier avec sucées");
+			System.out.println("Modifier avec sucÃ©es");
 		} else {
 			System.out.println("Il y un probleme lors de modifier d'un emprunt:" + idEmpt);
 		}
@@ -113,7 +113,7 @@ public class Main {
 
 		boolean test = gEmprunt.modifierDateEmp(idEmpt, nvDateEmp);
 		if (test) {
-			System.out.println("Livre modifier avec sucées");
+			System.out.println("Livre modifier avec sucÃ©es");
 		} else {
 			System.out.println("Il y un probleme lors de modifier d'un emprunt:" + idEmpt);
 		}
@@ -144,7 +144,7 @@ public class Main {
 
 		boolean test = gEmprunt.addEmprunt(emprunt);
 		if (test) {
-			System.out.println("Livre emprunt avec sucées");
+			System.out.println("Livre emprunt avec sucÃ©es");
 		} else {
 			System.out.println("Il y un probleme lors d'ajouter d'un emprunt:" + emprunt.getIdEmprunt());
 		}
@@ -182,7 +182,7 @@ public class Main {
 		if (reponse.equals("y")) {
 			boolean test = gLivre.deleteLivre(isbn);
 			if (test) {
-				System.out.println("Livre supprimer avec sucées");
+				System.out.println("Livre supprimer avec sucÃ©es");
 			} else {
 				System.out.println("Il y un probleme lors de sppruimer d'un livre:" + isbn);
 			}
@@ -205,7 +205,7 @@ public class Main {
 
 		boolean test = gLivre.updateAuteur(auteur, aISBN);
 		if (test) {
-			System.out.println("Livre modifier avec sucées");
+			System.out.println("Livre modifier avec sucÃ©es");
 		} else {
 			System.out.println("Il y un probleme lors de modifier d'un livre:" + aISBN);
 		}
@@ -220,7 +220,7 @@ public class Main {
 
 		boolean test = gLivre.updateTheme(theme, aISBN);
 		if (test) {
-			System.out.println("Livre modifier avec sucées");
+			System.out.println("Livre modifier avec sucÃ©es");
 		} else {
 			System.out.println("Il y un probleme lors de modifier d'un livre:" + aISBN);
 		}
@@ -235,7 +235,7 @@ public class Main {
 
 		boolean test = gLivre.updateTitre(titre, aISBN);
 		if (test) {
-			System.out.println("Livre modifier avec sucées");
+			System.out.println("Livre modifier avec sucÃ©es");
 		} else {
 			System.out.println("Il y un probleme lors de modifier d'un livre:" + aISBN);
 		}
@@ -249,7 +249,7 @@ public class Main {
 		int n_isbn = Integer.parseInt(sc.nextLine());
 		boolean test = gLivre.updateISBN(n_isbn, aISBN);
 		if (test) {
-			System.out.println("Livre modifier avec sucées");
+			System.out.println("Livre modifier avec sucÃ©es");
 		} else {
 			System.out.println("Il y un probleme lors de modifier d'un livre:" + aISBN);
 		}
@@ -274,7 +274,7 @@ public class Main {
 
 		boolean test = gLivre.addLivre(livre);
 		if (test) {
-			System.out.println("Livre ajouter avec sucées");
+			System.out.println("Livre ajouter avec sucÃ©es");
 		} else {
 			System.out.println("Il y un probleme lors d'ajouter d'un livre:" + livre.getISBN());
 		}
@@ -429,5 +429,5 @@ public class Main {
 		}
 		return false;
 	}
-
+System.out.println("test jenkins");
 }
